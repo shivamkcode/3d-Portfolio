@@ -2,11 +2,11 @@ import { useState, Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 
 import Loader from "../components/Loader";
-import Island from "../models/island";
 import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
+import Island from "../models/island";
 
 // import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
