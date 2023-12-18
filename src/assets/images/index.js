@@ -1,13 +1,11 @@
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
 import logo from './logo.svg'
+import devs from './100devs.png'
+import freelance from './freelance.jpg'
+import sk from './shopify.png'
 
 export {
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    logo
+    logo,
+    devs,
+    freelance,
+    sk
 }

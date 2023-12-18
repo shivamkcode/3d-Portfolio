@@ -1,228 +1,243 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { devs, freelance, sk } from "../assets/images";
 import {
-    car,
-    contact,
-    css,
-    estate,
-    express,
-    git,
-    github,
-    html,
-    javascript,
-    linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
-    react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
-    tailwindcss,
-    threads,
-    typescript
+  ayesha,
+  book,
+  car,
+  contact,
+  css,
+  estate,
+  express,
+  git,
+  github,
+  html,
+  javascript,
+  linkedin,
+  mongodb,
+  motion,
+  mui,
+  nextjs,
+  nodejs,
+  pricewise,
+  quotes,
+  react,
+  // redux,
+  sass,
+  snapgram,
+  summiz,
+  tailwindcss,
+  threads,
+  //   typescript,
 } from "../assets/icons";
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+  {
+    imageUrl: css,
+    name: "CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: express,
+    name: "Express",
+    type: "Backend",
+  },
+  {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: github,
+    name: "GitHub",
+    type: "Version Control",
+  },
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
+  {
+    imageUrl: javascript,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: motion,
+    name: "Motion",
+    type: "Animation",
+  },
+  {
+    imageUrl: mui,
+    name: "Material-UI",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    imageUrl: react,
+    name: "React",
+    type: "Frontend",
+  },
+  // {
+  //     imageUrl: redux,
+  //     name: "Redux",
+  //     type: "State Management",
+  // },
+  {
+    imageUrl: sass,
+    name: "Sass",
+    type: "Frontend",
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  // {
+  //     imageUrl: typescript,
+  //     name: "TypeScript",
+  //     type: "Frontend",
+  // }
 ];
 
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+  {
+    title: "Wev Developer",
+    company_name: "100devs",
+    icon: devs,
+    iconBg: "#7abfb7",
+    date: "October 2022 - Present",
+    points: [
+      "Collaborated with a team of developers to build modern and responsive web applications using best practices.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Built semantically structured full stack web applications.",
+    ],
+  },
+  {
+    title: "Full-Stack Web Developer",
+    company_name: "Freelance",
+    icon: freelance,
+    iconBg: "#accbe1",
+    date: "September 2020 - August 2022",
+    points: [
+      "Developing and maintaining web applications imprementing HTML5, CSS, JS, React.js and other related technologies.",
+      "Created full stack web applications and static websites for different clients across small and medium size businesses. Also, consulted on SEO and social media strategy. ",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Retail Store Manager",
+    company_name: "S.K. Departmental",
+    icon: sk,
+    iconBg: "#b7e4c7",
+    date: "May 2018 - June 2020",
+    points: [
+      "Led a successful strategy and communications campaign that exceeded the sales goal by 300%, raising a total of $110,000, with $35,000 raised digitally.",
+      "Oversaw day-to-day operations, managed a dedicated team, and implemented marketing initiatives, resulting in improved store performance and enhanced customer satisfaction",
+      "Gained valuable insights into consumer behavior, market trends, and the importance of delivering a personalized retail experience.",
+    ],
+  },
+  // {
+  //     title: "Full stack Developer",
+  //     company_name: "Meta",
+  //     icon: meta,
+  //     iconBg: "#a2d2ff",
+  //     date: "Jan 2023 - Present",
+  //     points: [
+  //         "Developing and maintaining web applications using React.js and other related technologies.",
+  //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //         "Implementing responsive design and ensuring cross-browser compatibility.",
+  //         "Participating in code reviews and providing constructive feedback to other developers.",
+  //     ],
+  // },
 ];
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
+  {
+    name: "Contact",
+    iconUrl: contact,
+    link: "/contact",
+  },
+  {
+    name: "GitHub",
+    iconUrl: github,
+    link: "https://github.com/shivamkcode",
+  },
+  {
+    name: "LinkedIn",
+    iconUrl: linkedin,
+    link: "https://www.linkedin.com/in/shivam-kumar-401594251/",
+  },
 ];
 
 export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "Pomodoro App",
+    description:
+      "This is a Pomodoro Timer application built with ReactJS. The application allows users to manage their time effectively using the Pomodoro technique. Users can set timers, change their default times, and customize the theme and fonts.",
+    link: "https://github.com/shivamkcode/PomodoraApp",
+    deploy: "https://pomodoro-app-kohl-nu.vercel.app/",
+  },
+  {
+    iconUrl: book,
+    theme: "btn-back-black",
+    name: "Dictionary App",
+    description:
+      "This is a Dictionary application built with ReactJS and integrated with a third-party dictionary API. The application allows users to search for words and get definitions, synonyms, antonyms, and examples of usage.",
+    link: "https://github.com/shivamkcode/FrontendMentors/tree/main/dictionaryApp",
+    deploy: "https://frontend-mentors-silk.vercel.app/",
+  },
+
+  {
+    iconUrl: ayesha,
+    theme: "btn-back-pink",
+    name: "Ayesha's Salon Landing Page",
+    description:
+      "This is a responsive landing page for Ayesha's Salon. The design is fully responsive, ensuring a seamless transition across a multitude of devices. Whether you are browsing on a desktop, tablet, or smartphone.",
+    link: "https://github.com/shivamkcode/freelance-projects/tree/main/ayesha",
+    deploy: "https://ayesha-salon.vercel.app/",
+  },
+
+  {
+    iconUrl: quotes,
+    theme: "btn-back-blue",
+    name: "Random Quotes",
+    description:
+      "RandomQuotes is an innovative application that generates random quotes and brings them to life with speech synthesis. Built with a focus on user experience, the application provides an engaging way to discover and share inspiring quotes.",
+    link: "https://github.com/shivamkcode/RandomQuotes",
+    deploy: "https://random-quotes-rouge.vercel.app/",
+  },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-yellow",
+    name: "Todo Application",
+    description:
+      "This is a simple yet powerful Todo application built with ReactJS. The application allows users to manage their daily tasks more effectively.",
+    link: "https://github.com/shivamkcode/todoList/tree/main/todo",
+    deploy: "https://todo-list-lovat-psi.vercel.app/",
+  },
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-red",
+    name: "Expense Tracker",
+    description:
+      "This is an Expense Tracker application built with ReactJS. It allows users to monitor their expenses by adding and removing items from the tracker.",
+    link: "https://github.com/shivamkcode/ExpenseTracker",
+  },
 ];

@@ -26,8 +26,14 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import book from './book.svg'
+import ayesha from './ayesha.svg'
+import quotes from './quotes.svg'
 
 export {
+    quotes,
+    ayesha,
+    book,
     css,
     express,
     git,

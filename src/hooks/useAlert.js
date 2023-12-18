@@ -9,7 +9,7 @@ const useAlert = () => {
         type
     })
 
-    const hideAlert = ({ text, type = 'danger'}) => setAlert({
+    const hideAlert = () => setAlert({
         show: false,
         text: '',
         type: 'danger'

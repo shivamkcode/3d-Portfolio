@@ -8,27 +8,13 @@ import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 import Island from "../models/Island";
 
-// import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
-  // const audioRef = useRef(new Audio(sakura));
-  // audioRef.current.volume = 0.4;
-  // audioRef.current.loop = true;
   const [audio, setAudio] = useState(null);
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
   const [isPlayingMusic, setisPlayingMusic] = useState(false);
-
-  // useEffect(() => {
-  //   if (isPlayingMusic) {
-  //     audioRef.current.play();
-  //   }
-
-  //   return () => {
-  //     audioRef.current.pause();
-  //   };
-  // }, [isPlayingMusic]);
 
   useEffect(() => {
     const loadAudio = async () => {
@@ -65,10 +51,12 @@ const Home = () => {
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
-    let rotation = [0.1, 4.7, 0];
+    let rotation = [0.1, 3.7, 0];
 
-    if (window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9];
+    if (window.innerWidth < 768 && window.innerWidth > 501) {
+      screenScale = [0.8, 0.8, 0.8];
+    }else if (window.innerWidth < 500){
+      screenScale = [0.6, 0.6, 0.6];
     } else {
       screenScale = [1, 1, 1];
     }
@@ -80,9 +68,12 @@ const Home = () => {
     let screenScale;
     let screenPosition;
 
-    if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -0.5, 0];
+    if (window.innerWidth < 768 && window.innerWidth > 501) {
+      screenScale = [1.4, 1.4, 1.4];
+      screenPosition = [0, -1.5, -1];
+    }else if (window.innerWidth < 500){
+      screenScale = [1, 1, 1];
+      screenPosition = [0, -1.5, -2];
     } else {
       screenScale = [3, 3, 3];
       screenPosition = [0, -4, -4];
@@ -96,7 +87,7 @@ const Home = () => {
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
   return (
-    <section className="w-full h-screen relative">
+    <section className="w-full h-[100vh] relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>

@@ -36,7 +36,7 @@ const Contact = () => {
           to_email: "shivambaniya12@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
       .then(() => {
         setIsLoading(false);
@@ -84,6 +84,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              autoComplete="on"
               className="input"
               placeholder="John"
               required
@@ -98,6 +99,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              autoComplete="on"
               className="input"
               placeholder="john@gmail.com"
               required

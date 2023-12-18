@@ -10,8 +10,10 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
   const { nodes, materials } = useGLTF(islandScene);
 
   const lastX = useRef(0);
-  const rotationSpeed = useRef(0);
+  const rotationSpeed = useRef(0.05);
   const dampingFactor = 0.95;
+
+  let isRotatingNow = null;
 
   const handlePointerDown = (e) => {
     e.stopPropagation();
@@ -45,41 +47,36 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
     }
   };
 
-  let keyPressStartTime = 0;
-
   const handleKeyDown = (e) => {
-    if (e.key === "ArrowLeft") {
-      if (!isRotating) {
-        setIsRotating(true);
-        islandRef.current.rotation.y += 0.01 * Math.PI;
-        rotationSpeed.current = 0.0125
-      }
-    } else if (e.key === "ArrowRight") {
-      if (!isRotating) {
-        setIsRotating(true);
-        islandRef.current.rotation.y -= 0.01 * Math.PI;
-        rotationSpeed.current = -0.0125
-      }
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      isRotatingNow = e.key;
+      setIsRotating(true);
     }
   };
 
   const handleKeyUp = (e) => {
     if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      isRotatingNow = null;
       setIsRotating(false);
     }
   };
 
   useFrame(() => {
+    const rotationStep = 0.005 * Math.PI;
     if (!isRotating) {
       rotationSpeed.current *= dampingFactor;
-
       if (Math.abs(rotationSpeed.current) < 0.001) {
         rotationSpeed.current = 0;
       }
       islandRef.current.rotation.y += rotationSpeed.current;
+    } else if (isRotatingNow === "ArrowLeft") {
+      islandRef.current.rotation.y += rotationStep;
+      rotationSpeed.current = 0.0125;
+    } else if (isRotatingNow === "ArrowRight") {
+      islandRef.current.rotation.y -= rotationStep;
+      rotationSpeed.current = -0.0125;
     } else {
       const rotation = islandRef.current.rotation.y;
-
       const normalizeRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
@@ -114,10 +111,15 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
       canvas.removeEventListener("pointerdown", handlePointerDown);
       canvas.removeEventListener("pointerup", handlePointerUp);
       canvas.removeEventListener("pointermove", handlePointerMove);
-      document.removeEventListener("keyup", handleKeyUp);
-      document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [gl, handlePointerDown, handlePointerMove, handlePointerUp]);
+  }, [
+    gl,
+    handlePointerDown,
+    handlePointerMove,
+    handlePointerUp,
+    handleKeyDown,
+    handleKeyUp,
+  ]);
 
   return (
     <a.group ref={islandRef} {...props}>

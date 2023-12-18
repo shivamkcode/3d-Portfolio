@@ -24,8 +24,8 @@ const About = () => {
         </p>
       </div>
       <div className="py-10 flex flex-col">
-        <h3 className="subhead -text">My Skills</h3>
-        <div className="mt-16 flex flex-wrap gap-12">
+        <h3 className="subhead-text">My Skills</h3>
+        <div className="mt-16 flex flex-wrap gap-12 justify-center">
           {skills.map((skill) => (
             <div key={skill.name} className="block-container w-20 h-20">
               <div className="btn-back rounded-xl" />
