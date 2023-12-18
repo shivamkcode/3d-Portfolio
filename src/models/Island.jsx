@@ -45,6 +45,8 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
     }
   };
 
+  let keyPressStartTime = 0;
+
   const handleKeyDown = (e) => {
     if (e.key === "ArrowLeft") {
       if (!isRotating) {

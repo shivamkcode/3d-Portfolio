@@ -8,26 +8,59 @@ import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 
-import sakura from "../assets/sakura.mp3";
+// import sakura from "../assets/sakura.mp3";
 import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
-  audioRef.current.volume = 0.4;
-  audioRef.current.loop = true;
+  // const audioRef = useRef(new Audio(sakura));
+  // audioRef.current.volume = 0.4;
+  // audioRef.current.loop = true;
+  const [audio, setAudio] = useState(null);
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
   const [isPlayingMusic, setisPlayingMusic] = useState(false);
 
+  // useEffect(() => {
+  //   if (isPlayingMusic) {
+  //     audioRef.current.play();
+  //   }
+
+  //   return () => {
+  //     audioRef.current.pause();
+  //   };
+  // }, [isPlayingMusic]);
+
   useEffect(() => {
-    if (isPlayingMusic) {
-      audioRef.current.play();
-    }
+    const loadAudio = async () => {
+      try {
+        const sakuraModule = await import("../assets/sakura.mp3");
+        const audio = new Audio(sakuraModule.default);
+        audio.volume = 0.4;
+        audio.loop = true;
+        setAudio(audio);
+      } catch (error) {
+        console.error('Error loading audio:', error);
+      }
+    };
+
+    loadAudio();
 
     return () => {
-      audioRef.current.pause();
+      if (audio) {
+        audio.pause();
+        audio.src = '';
+        setAudio(null);
+      }
     };
-  }, [isPlayingMusic]);
+  }, [])
+
+  useEffect(() => {
+    if (audio && isPlayingMusic) {
+      audio.play();
+    } else if (audio) {
+      audio.pause();
+    }
+  }, [audio, isPlayingMusic]);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -49,7 +82,7 @@ const Home = () => {
 
     if (window.innerWidth < 768) {
       screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, 1.5, 0];
+      screenPosition = [0, -0.5, 0];
     } else {
       screenScale = [3, 3, 3];
       screenPosition = [0, -4, -4];

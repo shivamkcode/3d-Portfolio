@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import scene from '../assets/3d/fox.glb'
-import { act } from "@react-three/fiber";
 
 const Fox = ({ currentAnimation, ...props}) => {
   const group = useRef();
@@ -10,7 +9,6 @@ const Fox = ({ currentAnimation, ...props}) => {
 
     useEffect(() => {
         Object.values(actions).forEach((action) => action.stop())
-
         if (actions[currentAnimation]) {
             actions[currentAnimation].play()
         }

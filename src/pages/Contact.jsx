@@ -14,7 +14,7 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
-  const { alert, showAlert, hideAlert } = useAlert()
+  const { alert, showAlert, hideAlert } = useAlert();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -40,21 +40,27 @@ const Contact = () => {
       )
       .then(() => {
         setIsLoading(false);
-        showAlert({ show: true, text: 'Message has been sent successfully!', type: 'success'})
+        showAlert({
+          show: true,
+          text: "Message has been sent successfully!",
+          type: "success",
+        });
 
         setTimeout(() => {
-          hideAlert()
-          setCurrentAnimation('idle')
+          hideAlert();
+          setCurrentAnimation("idle");
           setForm({ name: "", email: "", message: "" });
-          
-        }, [3000])
-
+        }, [3000]);
       })
       .catch((error) => {
         setIsLoading(false);
         console.log(error);
         setCurrentAnimation("idle");
-        showAlert({ show: true, text: 'Failed to recieve your message!!!', type: 'danger'})
+        showAlert({
+          show: true,
+          text: "Failed to recieve your message!!!",
+          type: "danger",
+        });
       });
   };
 
@@ -63,12 +69,13 @@ const Contact = () => {
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
-      {alert.show && <Alert {...alert}/> }
+      {alert.show && <Alert {...alert} />}
 
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
 
         <form
+          ref={formRef}
           onSubmit={handleSubmit}
           className="w-full flex flex-col gap-7 mt-14"
         >
@@ -139,7 +146,7 @@ const Contact = () => {
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
             <Fox
-              currentAnimations={currentAnimation}
+              currentAnimation={currentAnimation}
               position={[0.5, 0.35, 0]}
               rotation={[12.6, -0.6, 0]}
               scale={[0.5, 0.5, 0.5]}
