@@ -5,6 +5,7 @@ import {
   car,
   contact,
   css,
+  entertainment,
   estate,
   express,
   git,
@@ -195,28 +196,35 @@ export const projects = [
     deploy: "https://pomodoro-app-kohl-nu.vercel.app/",
   },
   {
+    iconUrl: entertainment,
+    theme: "btn-back-red",
+    name: "Entertainment App",
+    description:
+      "This is an entertainment app that allows users to browse and search through a collection of movies and TV series.The app is made fully responsive and is completely modeled to work with any related api.",
+    link: "https://github.com/shivamkcode/EntertainmentApp/tree/main",
+    deploy: "https://entertainment-app-five.vercel.app/",
+  },
+  {
     iconUrl: book,
-    theme: "btn-back-black",
+    theme: "btn-back-orange",
     name: "Dictionary App",
     description:
       "This is a Dictionary application built with ReactJS and integrated with a third-party dictionary API. The application allows users to search for words and get definitions, synonyms, antonyms, and examples of usage.",
     link: "https://github.com/shivamkcode/FrontendMentors/tree/main/dictionaryApp",
     deploy: "https://frontend-mentors-silk.vercel.app/",
   },
-
   {
     iconUrl: ayesha,
-    theme: "btn-back-pink",
+    theme: "btn-back-green",
     name: "Ayesha's Salon Landing Page",
     description:
       "This is a responsive landing page for Ayesha's Salon. The design is fully responsive, ensuring a seamless transition across a multitude of devices. Whether you are browsing on a desktop, tablet, or smartphone.",
     link: "https://github.com/shivamkcode/freelance-projects/tree/main/ayesha",
     deploy: "https://ayesha-salon.vercel.app/",
   },
-
   {
     iconUrl: quotes,
-    theme: "btn-back-blue",
+    theme: "btn-back-black",
     name: "Random Quotes",
     description:
       "RandomQuotes is an innovative application that generates random quotes and brings them to life with speech synthesis. Built with a focus on user experience, the application provides an engaging way to discover and share inspiring quotes.",
@@ -228,7 +236,7 @@ export const projects = [
     theme: "btn-back-yellow",
     name: "Todo Application",
     description:
-      "This is a simple yet powerful Todo application built with ReactJS. The application allows users to manage their daily tasks more effectively.",
+      "This is a simple yet powerful Todo application built with ReactJS. The application allows users to manage their daily tasks more effectively. It gives user the freedom to add, edit and delete the tasks and keeps them saved using localStorage. ",
     link: "https://github.com/shivamkcode/todoList/tree/main/todo",
     deploy: "https://todo-list-lovat-psi.vercel.app/",
   },
@@ -237,7 +245,7 @@ export const projects = [
     theme: "btn-back-red",
     name: "Expense Tracker",
     description:
-      "This is an Expense Tracker application built with ReactJS. It allows users to monitor their expenses by adding and removing items from the tracker.",
+      "This application is an Expense Tracker, meticulously crafted using the popular JavaScript library, ReactJS. It serves as a practical tool for individuals who wish to have a clear and concise overview of their financial activities.",
     link: "https://github.com/shivamkcode/ExpenseTracker",
   },
 ];

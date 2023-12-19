@@ -29,8 +29,10 @@ import soundoff from './soundoff.png'
 import book from './book.svg'
 import ayesha from './ayesha.svg'
 import quotes from './quotes.svg'
+import entertainment from './entertainment.svg'
 
 export {
+    entertainment,
     quotes,
     ayesha,
     book,
