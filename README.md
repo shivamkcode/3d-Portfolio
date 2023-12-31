@@ -25,7 +25,7 @@ Adding to the interactivity is a 3D plane that rotates around the island as the 
 
 1. Clone the repo
 
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/shivamkcode/3d-Portfolio
 
 2. Install NPM packages
 
