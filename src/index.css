@@ -10,6 +10,7 @@
 }
 
 *::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.1);
   width: 5px;
 }
 
@@ -151,6 +152,11 @@ body:has(.card[data-color="green"]:hover) {
 .block-container .btn-back-black {
   background: linear-gradient(135deg, #0a1647 -20%, #e4e7e4 120%);
 }
+
+.block-container .btn-back-purple {
+  background: linear-gradient(135deg, #1104c2 -20%, #e4e7e4 120%);
+}
+
 
 .block-container .btn-front {
   position: absolute;

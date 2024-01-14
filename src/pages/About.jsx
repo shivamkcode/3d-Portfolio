@@ -6,12 +6,13 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
+import { useState } from "react";
 
 const About = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        Hello, I'm {''}
+        Hello, I'm {""}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Shivam
         </span>
@@ -26,18 +27,34 @@ const About = () => {
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12 justify-center">
-          {skills.map((skill) => (
-            <div key={skill.name} className="block-container w-20 h-20">
-              <div className="btn-back rounded-xl" />
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-1/2 h1/2 object-contain"
-                />
+          {skills.map((skill) => {
+            const [showDescription, setShowDescription] = useState(false);
+            return (
+              <div
+                key={skill.name}
+                className="block-container w-20 h-20 cursor-pointer"
+                title={skill.name}
+                onMouseEnter={() => setShowDescription(true)}
+                onMouseLeave={() => setShowDescription(false)}
+                onMouseDown={() => setShowDescription(true)}
+                onMouseUp={() => setShowDescription(false)}
+              >
+                <div className="btn-back rounded-xl" />
+                <div className="btn-front rounded-xl flex justify-center items-center">
+                  <img
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className="w-1/2 h1/2 object-contain"
+                  />
+                </div>
+                {showDescription && (
+                  <div className={`absolute -top-16 left-1/2 -translate-x-1/2 bg-black text-white py-2 px-3 rounded-md z-50 opacity-50`}>
+                  {skill.name}
+                </div>
+                )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
       <div className="py-16">

@@ -30,8 +30,18 @@ import book from './book.svg'
 import ayesha from './ayesha.svg'
 import quotes from './quotes.svg'
 import entertainment from './entertainment.svg'
+import task from './task.svg'
+import audiophile from './audiophile.svg'
+import sequelize from './sequelizejs.svg'
+import mysql from './mysql.svg'
+import mongoose from './mongoose.svg'
 
 export {
+    mongoose,
+    sequelize,
+    mysql,
+    audiophile,
+    task,
     entertainment,
     quotes,
     ayesha,

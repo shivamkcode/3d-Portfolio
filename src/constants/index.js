@@ -21,25 +21,60 @@ import {
   pricewise,
   quotes,
   react,
-  // redux,
+  redux,
   sass,
   snapgram,
   summiz,
   tailwindcss,
   threads,
-  //   typescript,
+  typescript,
+  task,
+  audiophile,
+  sequelize,
+  mysql,
+  mongoose,
 } from "../assets/icons";
 
 export const skills = [
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
   {
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
   },
   {
+    imageUrl: sass,
+    name: "Sass",
+    type: "Frontend",
+  },
+  {
+    imageUrl: javascript,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
     imageUrl: express,
     name: "Express",
     type: "Backend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: mongoose,
+    name: "Mongoose",
+    type: "ODB",
   },
   {
     imageUrl: git,
@@ -52,19 +87,24 @@ export const skills = [
     type: "Version Control",
   },
   {
-    imageUrl: html,
-    name: "HTML",
+    imageUrl: react,
+    name: "React",
     type: "Frontend",
   },
   {
-    imageUrl: javascript,
-    name: "JavaScript",
-    type: "Frontend",
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
+    imageUrl: mysql,
+    name: "MYSQL",
     type: "Database",
+  },
+  {
+    imageUrl: sequelize,
+    name: "Sequelize",
+    type: "ORM",
   },
   {
     imageUrl: motion,
@@ -73,7 +113,7 @@ export const skills = [
   },
   {
     imageUrl: mui,
-    name: "Material-UI",
+    name: "MUI",
     type: "Frontend",
   },
   {
@@ -82,62 +122,42 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: nodejs,
-    name: "Node.js",
-    type: "Backend",
-  },
-  {
-    imageUrl: react,
-    name: "React",
-    type: "Frontend",
-  },
-  // {
-  //     imageUrl: redux,
-  //     name: "Redux",
-  //     type: "State Management",
-  // },
-  {
-    imageUrl: sass,
-    name: "Sass",
-    type: "Frontend",
-  },
-  {
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
   },
-  // {
-  //     imageUrl: typescript,
-  //     name: "TypeScript",
-  //     type: "Frontend",
-  // }
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
 ];
 
 export const experiences = [
   {
-    title: "Wev Developer",
-    company_name: "100devs",
-    icon: devs,
-    iconBg: "#7abfb7",
-    date: "October 2022 - Present",
-    points: [
-      "Collaborated with a team of developers to build modern and responsive web applications using best practices.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Built semantically structured full stack web applications.",
-    ],
-  },
-  {
     title: "Full-Stack Web Developer",
     company_name: "Freelance",
     icon: freelance,
-    iconBg: "#accbe1",
-    date: "September 2020 - August 2022",
+    iconBg: "#fff",
+    date: "September 2022 - Present",
     points: [
       "Developing and maintaining web applications imprementing HTML5, CSS, JS, React.js and other related technologies.",
       "Created full stack web applications and static websites for different clients across small and medium size businesses. Also, consulted on SEO and social media strategy. ",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Wev Developer",
+    company_name: "100devs",
+    icon: devs,
+    iconBg: "#7abfb7",
+    date: "October 2021 - July 2022",
+    points: [
+      "Collaborated with a team of developers to build modern and responsive web applications using best practices.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Built semantically structured full stack web applications.",
     ],
   },
   {
@@ -194,6 +214,24 @@ export const projects = [
       "This is a Pomodoro Timer application built with ReactJS. The application allows users to manage their time effectively using the Pomodoro technique. Users can set timers, change their default times, and customize the theme and fonts.",
     link: "https://github.com/shivamkcode/PomodoraApp",
     deploy: "https://pomodoro-app-kohl-nu.vercel.app/",
+  },
+  {
+    iconUrl: audiophile,
+    theme: "btn-back-orange",
+    name: "audiophile ecommerce site",
+    description:
+      "This is a full-stack ecommerce website built using Next.js, TypeScript, Tailwind CSS and uses Sequelize with Mysql2 as database. Users can create an account, add products to their cart, fill out a checkout form, and receive a confirmation on the thank you page.",
+    link: "https://github.com/shivamkcode/audiophile-e-commerce",
+    deploy: "/",
+  },
+  {
+    iconUrl: task,
+    theme: "btn-back-purple",
+    name: "TaskTracker",
+    description:
+      "TaskTracker is a full-stack task management application built with React.js for the frontend and Node.js for the backend. The application allows users to sign up, log in, create new boards and columns, and manage tasks with their subtasks.",
+    link: "https://github.com/shivamkcode/task-tracker",
+    deploy: "task-tracker-teal-theta.vercel.app",
   },
   {
     iconUrl: entertainment,
