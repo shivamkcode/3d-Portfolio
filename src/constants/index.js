@@ -191,7 +191,7 @@ export const socialLinks = [
   {
     name: "Contact",
     iconUrl: contact,
-    link: "/contact",
+    link: "tel:226-927-5253",
   },
   {
     name: "GitHub",
@@ -222,7 +222,7 @@ export const projects = [
     description:
       "This is a full-stack ecommerce website built using Next.js, TypeScript, Tailwind CSS and uses Sequelize with Mysql2 as database. Users can create an account, add products to their cart, fill out a checkout form, and receive a confirmation on the thank you page.",
     link: "https://github.com/shivamkcode/audiophile-e-commerce",
-    deploy: "/",
+    deploy: "https://audiophile-e-commerce-three.vercel.app",
   },
   {
     iconUrl: task,
