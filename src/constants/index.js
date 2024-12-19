@@ -1,4 +1,4 @@
-import { devs, freelance, sk } from "../assets/images";
+import { devs, freelance, sk, timHortons } from "../assets/images";
 import {
   ayesha,
   book,
@@ -7,6 +7,7 @@ import {
   css,
   entertainment,
   estate,
+  expo,
   express,
   git,
   github,
@@ -33,6 +34,7 @@ import {
   sequelize,
   mysql,
   mongoose,
+  hangman
 } from "../assets/icons";
 
 export const skills = [
@@ -106,16 +108,16 @@ export const skills = [
     name: "Sequelize",
     type: "ORM",
   },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
-    imageUrl: mui,
-    name: "MUI",
-    type: "Frontend",
-  },
+  // {
+  //   imageUrl: motion,
+  //   name: "Motion",
+  //   type: "Animation",
+  // },
+  // {
+  //   imageUrl: mui,
+  //   name: "MUI",
+  //   type: "Frontend",
+  // },
   {
     imageUrl: nextjs,
     name: "Next.js",
@@ -131,15 +133,42 @@ export const skills = [
     name: "TypeScript",
     type: "Frontend",
   },
+  {
+    imageUrl: react,
+    name: "React Native",
+    type: "Frontend",
+  },
+  {
+    imageUrl: expo,
+    name: "Expo",
+    type: "Frontend",
+  },
 ];
 
 export const experiences = [
+  {
+    title: "Crew Member",
+    company_name: "Tim Hortons",
+    icon: timHortons,
+    iconBg: "#f2c7c7",
+    date: "March 2024 - Present",
+    points: [
+      "Delivered top-notch customer service, resolving issues quickly.",
+      "Managed cash transactions and operated the POS system accurately.",
+      "Promoted products, increasing sales with effective upselling.",
+      "Collaborated with team members during peak hours.",
+      "Assisted with inventory control and restocking.",
+      "Prepared food and beverages to company standards.",
+      "Maintained cleanliness and complied with health and safety guidelines.",
+      "Supported the training of new team members.",
+    ],
+  },
   {
     title: "Full-Stack Web Developer",
     company_name: "Freelance",
     icon: freelance,
     iconBg: "#fff",
-    date: "September 2022 - Present",
+    date: "September 2023 - Present",
     points: [
       "Developing and maintaining web applications imprementing HTML5, CSS, JS, React.js and other related technologies.",
       "Created full stack web applications and static websites for different clients across small and medium size businesses. Also, consulted on SEO and social media strategy. ",
@@ -148,11 +177,11 @@ export const experiences = [
     ],
   },
   {
-    title: "Wev Developer",
+    title: "Web Developer",
     company_name: "100devs",
     icon: devs,
     iconBg: "#7abfb7",
-    date: "October 2021 - July 2022",
+    date: "October 2022 - July 2022",
     points: [
       "Collaborated with a team of developers to build modern and responsive web applications using best practices.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -165,26 +194,13 @@ export const experiences = [
     company_name: "S.K. Departmental",
     icon: sk,
     iconBg: "#b7e4c7",
-    date: "May 2018 - June 2020",
+    date: "May 2018 - June 2022",
     points: [
       "Led a successful strategy and communications campaign that exceeded the sales goal by 300%, raising a total of $110,000, with $35,000 raised digitally.",
       "Oversaw day-to-day operations, managed a dedicated team, and implemented marketing initiatives, resulting in improved store performance and enhanced customer satisfaction",
       "Gained valuable insights into consumer behavior, market trends, and the importance of delivering a personalized retail experience.",
     ],
   },
-  // {
-  //     title: "Full stack Developer",
-  //     company_name: "Meta",
-  //     icon: meta,
-  //     iconBg: "#a2d2ff",
-  //     date: "Jan 2023 - Present",
-  //     points: [
-  //         "Developing and maintaining web applications using React.js and other related technologies.",
-  //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //         "Implementing responsive design and ensuring cross-browser compatibility.",
-  //         "Participating in code reviews and providing constructive feedback to other developers.",
-  //     ],
-  // },
 ];
 
 export const socialLinks = [
@@ -220,7 +236,7 @@ export const projects = [
     theme: "btn-back-orange",
     name: "audiophile ecommerce site",
     description:
-      "This is a full-stack ecommerce website built using Next.js, TypeScript, Tailwind CSS and uses Sequelize with Mysql2 as database. Users can create an account, add products to their cart, fill out a checkout form, and receive a confirmation on the thank you page.",
+      "This is a full-stack ecommerce website built using Next.js, TypeScript, Tailwind CSS and uses Sequelize with MySQL as database. It allows user to explore through products, add them to cart, checkout and recieve a thank you after checkout",
     link: "https://github.com/shivamkcode/audiophile-e-commerce",
     deploy: "https://audiophile-e-commerce-three.vercel.app",
   },
@@ -231,7 +247,7 @@ export const projects = [
     description:
       "TaskTracker is a full-stack task management application built with React.js for the frontend and Node.js for the backend. The application allows users to sign up, log in, create new boards and columns, and manage tasks with their subtasks.",
     link: "https://github.com/shivamkcode/task-tracker",
-    deploy: "task-tracker-teal-theta.vercel.app",
+    deploy: "https://task-tracker-teal-theta.vercel.app/",
   },
   {
     iconUrl: entertainment,
@@ -285,5 +301,14 @@ export const projects = [
     description:
       "This application is an Expense Tracker, meticulously crafted using the popular JavaScript library, ReactJS. It serves as a practical tool for individuals who wish to have a clear and concise overview of their financial activities.",
     link: "https://github.com/shivamkcode/ExpenseTracker",
+  },
+  {
+    iconUrl: hangman,
+    theme: "btn-back-blue",
+    name: "Hangman Game",
+    description:
+      "Hangman is a classic word guessing game with six different categories. This project is a web-based version developed with Next.js for the frontend framework, TypeScript for type safety, and Tailwind CSS for styling.",
+    link: "https://github.com/shivamkcode/HangmanGame",
+    deploy: "https://hangman-game-vert-eight.vercel.app/",
   },
 ];

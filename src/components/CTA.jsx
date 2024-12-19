@@ -15,8 +15,8 @@ const CTA = () => {
         </Link>
       </section>
       <div className="flex gap-10 border-t pt-6 justify-center mt-6">
-        {socialLinks.map((link) => (
-          <a href={link.link}>
+        {socialLinks.map((link, index) => (
+          <a href={link.link} key={index}>
             <img className="w-6 h-6 md:w-10 md:h-10" src={link.iconUrl} alt="" />
           </a>
         ))}

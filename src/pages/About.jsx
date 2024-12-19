@@ -20,8 +20,7 @@ const About = () => {
 
       <div className="mt-4 flex flex-col gap-3 text-slate-500">
         <p>
-          Web Developer based in Canada, specializing in building responsive
-          full-stack web application.
+          Web Developer based in Canada, specialized in building responsive full-stack web application.
         </p>
       </div>
       <div className="py-10 flex flex-col">
@@ -61,8 +60,7 @@ const About = () => {
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            I've worked as a freelance for many customers, leveling up my skills
-            and teaming up with smart people. Here's the rundown:
+          A versatile professional with experience in customer service at Tim Hortons, freelance full stack web development, contributing to projects at 100 Devs Agency, and providing efficient service in a grocery store setting. Here's the rundown:
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import css from './css.svg'
 import express from './express.svg'
+import expo from './expo.svg'
 import git from './git.svg'
 import github from './github.svg'
 import html from './html.svg'
@@ -35,6 +36,7 @@ import audiophile from './audiophile.svg'
 import sequelize from './sequelizejs.svg'
 import mysql from './mysql.svg'
 import mongoose from './mongoose.svg'
+import hangman from './hangman.svg'
 
 export {
     mongoose,
@@ -42,6 +44,7 @@ export {
     mysql,
     audiophile,
     task,
+    expo,
     entertainment,
     quotes,
     ayesha,
@@ -73,5 +76,6 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    hangman
 }
