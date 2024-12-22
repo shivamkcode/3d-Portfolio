@@ -235,7 +235,7 @@ export const projects = [
   {
     iconUrl: audiophile,
     theme: "btn-back-orange",
-    name: "audiophile ecommerce site",
+    name: "Audiophile",
     description:
       "This is a full-stack ecommerce website built using Next.js, TypeScript, Tailwind CSS and uses Sequelize with MySQL as database. It allows user to explore through products, add them to cart, checkout and recieve a thank you after checkout",
     link: "https://github.com/shivamkcode/audiophile-e-commerce",
@@ -262,7 +262,7 @@ export const projects = [
   {
     iconUrl: book,
     theme: "btn-back-orange",
-    name: "Dictionary App",
+    name: "Dictionary",
     description:
       "This is a Dictionary application built with ReactJS and integrated with a third-party dictionary API. The application allows users to search for words and get definitions, synonyms, antonyms, and examples of usage.",
     link: "https://github.com/shivamkcode/FrontendMentors/tree/main/dictionaryApp",
@@ -271,7 +271,7 @@ export const projects = [
   {
     iconUrl: ayesha,
     theme: "btn-back-green",
-    name: "Ayesha's Salon Landing Page",
+    name: "Ayesha's Salon",
     description:
       "This is a responsive landing page for Ayesha's Salon. The design is fully responsive, ensuring a seamless transition across a multitude of devices. Whether you are browsing on a desktop, tablet, or smartphone.",
     link: "https://github.com/shivamkcode/freelance-projects/tree/main/ayesha",
