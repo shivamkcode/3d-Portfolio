@@ -1,3 +1,4 @@
+'use client'
 import { useState, Suspense, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 
@@ -14,7 +15,7 @@ const Home = () => {
   const [audio, setAudio] = useState(null);
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
-  const [isPlayingMusic, setisPlayingMusic] = useState(true);
+  const [isPlayingMusic, setisPlayingMusic] = useState(false);
 
   useEffect(() => {
     const loadAudio = async () => {

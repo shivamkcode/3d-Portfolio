@@ -34,7 +34,8 @@ import {
   sequelize,
   mysql,
   mongoose,
-  hangman
+  hangman,
+  salon
 } from "../assets/icons";
 
 export const skills = [
@@ -310,5 +311,14 @@ export const projects = [
       "Hangman is a classic word guessing game with six different categories. This project is a web-based version developed with Next.js for the frontend framework, TypeScript for type safety, and Tailwind CSS for styling.",
     link: "https://github.com/shivamkcode/HangmanGame",
     deploy: "https://hangman-game-vert-eight.vercel.app/",
+  },
+  {
+    iconUrl: salon,
+    theme: "btn-back-black",
+    name: "A-one_Ayesha",
+    description:
+      "A-one_Ayesha Salon is designed to provide a seamless and user-friendly experience for clients looking to explore salon services. The website includes male and female versions, offering gender-specific services and features. ",
+    link: "https://github.com/shivamkcode/Salon",
+    deploy: "https://a-oneayesha.vercel.app/",
   },
 ];
