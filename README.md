@@ -55,6 +55,8 @@ Tailwind CSS is a utility-first CSS framework that offers highly customizable, l
 
 ## Installation
 
+To run the website locally, follow these steps:
+
 1. Clone the repo
 
 ```bash
@@ -108,4 +110,4 @@ Project Link: [https://github.com/shivamkcode/3d-Portfolio](https://github.com/s
 
 The 3d-Portfolio is live! You can explore about and projects created by visiting the deployed site at:
 
-[https://shivam-kumar.vercel.app/](https://shivam-kumar.vercel.app/)
+[https://www.heyshivam.tech/](https://www.heyshivam.tech/)
