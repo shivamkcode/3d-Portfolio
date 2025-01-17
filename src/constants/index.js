@@ -35,7 +35,8 @@ import {
   mysql,
   mongoose,
   hangman,
-  salon
+  salon,
+  postgreSQL
 } from "../assets/icons";
 
 export const skills = [
@@ -77,7 +78,7 @@ export const skills = [
   {
     imageUrl: mongoose,
     name: "Mongoose",
-    type: "ODB",
+    type: "Backend",
   },
   {
     imageUrl: git,
@@ -94,11 +95,11 @@ export const skills = [
     name: "React",
     type: "Frontend",
   },
-  {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
-  },
+  // {
+  //   imageUrl: redux,
+  //   name: "Redux",
+  //   type: "State Management",
+  // },
   {
     imageUrl: mysql,
     name: "MYSQL",
@@ -107,18 +108,13 @@ export const skills = [
   {
     imageUrl: sequelize,
     name: "Sequelize",
-    type: "ORM",
+    type: "Backend",
   },
-  // {
-  //   imageUrl: motion,
-  //   name: "Motion",
-  //   type: "Animation",
-  // },
-  // {
-  //   imageUrl: mui,
-  //   name: "MUI",
-  //   type: "Frontend",
-  // },
+  {
+    imageUrl: postgreSQL,
+    name: "PostgreSQL",
+    type: "Database",
+  },
   {
     imageUrl: nextjs,
     name: "Next.js",
@@ -239,7 +235,7 @@ export const projects = [
     description:
       "This is a full-stack ecommerce website built using Next.js, TypeScript, Tailwind CSS and uses Sequelize with MySQL as database. It allows user to explore through products, add them to cart, checkout and recieve a thank you after checkout",
     link: "https://github.com/shivamkcode/audiophile-e-commerce",
-    deploy: "https://audiophile-e-commerce-three.vercel.app",
+    deploy: "https://audiophile.heyshivam.tech/",
   },
   {
     iconUrl: task,
@@ -248,7 +244,7 @@ export const projects = [
     description:
       "TaskTracker is a full-stack task management application built with React.js for the frontend and Node.js for the backend. The application allows users to sign up, log in, create new boards and columns, and manage tasks with their subtasks.",
     link: "https://github.com/shivamkcode/task-tracker",
-    deploy: "https://task-tracker-teal-theta.vercel.app/",
+    deploy: "https://tasktracker.heyshivam.tech/",
   },
   {
     iconUrl: entertainment,
@@ -310,7 +306,7 @@ export const projects = [
     description:
       "Hangman is a classic word guessing game with six different categories. This project is a web-based version developed with Next.js for the frontend framework, TypeScript for type safety, and Tailwind CSS for styling.",
     link: "https://github.com/shivamkcode/HangmanGame",
-    deploy: "https://hangman-game-vert-eight.vercel.app/",
+    deploy: "https://hangman.heyshivam.tech/",
   },
   {
     iconUrl: salon,
@@ -319,6 +315,6 @@ export const projects = [
     description:
       "A-one_Ayesha Salon is designed to provide a seamless and user-friendly experience for clients looking to explore salon services. The website includes male and female versions, offering gender-specific services and features. ",
     link: "https://github.com/shivamkcode/Salon",
-    deploy: "https://a-oneayesha.vercel.app/",
+    deploy: "https://salon.heyshivam.tech/",
   },
 ];

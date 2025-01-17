@@ -8,7 +8,46 @@ import { skills, experiences } from "../constants";
 import CTA from "../components/CTA";
 import { useState } from "react";
 
+const SkillSection = ({ title, skills }) => (
+  <div>
+    <h2 className="subhead-text pt-10 text-center">{title}</h2>
+    <div className="mt-16 flex flex-wrap gap-12 justify-center">
+      {skills.map((skill) => {
+        const [showDescription, setShowDescription] = useState(false);
+        return (
+          <div
+            key={skill.name}
+            className="block-container w-20 h-20 cursor-pointer"
+            title={skill.name}
+            onMouseEnter={() => setShowDescription(true)}
+            onMouseLeave={() => setShowDescription(false)}
+            onMouseDown={() => setShowDescription(true)}
+            onMouseUp={() => setShowDescription(false)}
+          >
+            <div className="btn-back rounded-xl" />
+            <div className="btn-front rounded-xl flex justify-center items-center">
+              <img
+                src={skill.imageUrl}
+                alt={skill.name}
+                className="w-1/2 h1/2 object-contain"
+              />
+            </div>
+            {showDescription && (
+              <div
+                className={`absolute -top-16 left-1/2 -translate-x-1/2 bg-black text-white py-2 px-3 rounded-md z-50 opacity-50`}
+              >
+                {skill.name}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+);
+
 const About = () => {
+  const skillTypes = [...new Set(skills.map((skill) => skill.type))];
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -19,48 +58,32 @@ const About = () => {
       </h1>
 
       <div className="mt-4 flex flex-col gap-3 text-slate-500">
-        <p>
-          Web Developer based in Canada, specialized in building responsive full-stack web application.
-        </p>
+        Web Developer based in Canada, specialized in building responsive
+        full-stack web application.
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
-        <div className="mt-16 flex flex-wrap gap-12 justify-center">
-          {skills.map((skill) => {
-            const [showDescription, setShowDescription] = useState(false);
-            return (
-              <div
-                key={skill.name}
-                className="block-container w-20 h-20 cursor-pointer"
-                title={skill.name}
-                onMouseEnter={() => setShowDescription(true)}
-                onMouseLeave={() => setShowDescription(false)}
-                onMouseDown={() => setShowDescription(true)}
-                onMouseUp={() => setShowDescription(false)}
-              >
-                <div className="btn-back rounded-xl" />
-                <div className="btn-front rounded-xl flex justify-center items-center">
-                  <img
-                    src={skill.imageUrl}
-                    alt={skill.name}
-                    className="w-1/2 h1/2 object-contain"
-                  />
-                </div>
-                {showDescription && (
-                  <div className={`absolute -top-16 left-1/2 -translate-x-1/2 bg-black text-white py-2 px-3 rounded-md z-50 opacity-50`}>
-                  {skill.name}
-                </div>
-                )}
-              </div>
-            );
-          })}
+        <p className="mt-4 flex flex-col gap-3 text-slate-500">
+          These are a few skills I have aquired along the way.
+        </p>
+        <div>
+          {skillTypes.map((type) => (
+            <SkillSection
+              key={type}
+              title={type}
+              skills={skills.filter((skill) => skill.type === type)}
+            />
+          ))}
         </div>
       </div>
       <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-          A versatile professional with experience in customer service at Tim Hortons, freelance full stack web development, contributing to projects at 100 Devs Agency, and providing efficient service in a grocery store setting. Here's the rundown:
+            A versatile professional with experience in customer service at Tim
+            Hortons, freelance full stack web development, contributing to
+            projects at 100 Devs Agency, and providing efficient service in a
+            grocery store setting. Here's the rundown:
           </p>
         </div>
 

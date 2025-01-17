@@ -38,6 +38,7 @@ import mysql from "./mysql.svg";
 import mongoose from "./mongoose.svg";
 import hangman from "./hangman.svg";
 import salon from "./salon.png";
+import postgreSQL from './postgreSQL.svg'
 
 export {
   mongoose,
@@ -80,4 +81,5 @@ export {
   soundoff,
   hangman,
   salon,
+  postgreSQL,
 };
