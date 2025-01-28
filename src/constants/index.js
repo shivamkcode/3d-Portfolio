@@ -291,14 +291,14 @@ export const projects = [
     link: "https://github.com/shivamkcode/todoList/tree/main/todo",
     deploy: "https://todo-list-lovat-psi.vercel.app/",
   },
-  {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
-    name: "Expense Tracker",
-    description:
-      "This application is an Expense Tracker, meticulously crafted using the popular JavaScript library, ReactJS. It serves as a practical tool for individuals who wish to have a clear and concise overview of their financial activities.",
-    link: "https://github.com/shivamkcode/ExpenseTracker",
-  },
+  // {
+  //   iconUrl: pricewise,
+  //   theme: "btn-back-red",
+  //   name: "Expense Tracker",
+  //   description:
+  //     "This application is an Expense Tracker, meticulously crafted using the popular JavaScript library, ReactJS. It serves as a practical tool for individuals who wish to have a clear and concise overview of their financial activities.",
+  //   link: "https://github.com/shivamkcode/ExpenseTracker",
+  // },
   {
     iconUrl: hangman,
     theme: "btn-back-blue",
