@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { skills, experiences } from "../constants";
+import { skills, experiences, certifications } from "../constants";
 import CTA from "../components/CTA";
 import { useState } from "react";
 
@@ -20,9 +20,11 @@ const About = () => {
 
       <div className="mt-4 flex flex-col gap-3 text-slate-500">
         <p>
-          Web Developer based in Canada, specialized in building responsive full-stack web application.
+          Web Developer based in Canada, specialized in building responsive
+          full-stack web application.
         </p>
       </div>
+
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12 justify-center">
@@ -47,20 +49,61 @@ const About = () => {
                   />
                 </div>
                 {showDescription && (
-                  <div className={`absolute -top-16 left-1/2 -translate-x-1/2 bg-black text-white py-2 px-3 rounded-md z-50 opacity-50`}>
-                  {skill.name} ({skill.type})
-                </div>
+                  <div
+                    className={`absolute -top-16 left-1/2 -translate-x-1/2 bg-black text-white py-2 px-3 rounded-md z-50 opacity-50`}
+                  >
+                    {skill.name} ({skill.type})
+                  </div>
                 )}
               </div>
             );
           })}
         </div>
       </div>
+
+      <div className="py-16">
+        <h3 className="subhead-text">My Certifications</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <p>
+            Here are some of the certifications I've earned to enhance my skills
+            and knowledge:
+          </p>
+        </div>
+        <div className="mt-12 flex flex-wrap gap-8 justify-center">
+          {certifications.map((certification) => (
+            <div
+              key={certification.name}
+              className="block-container w-[80%] md:w-[45%] cursor-pointer transition transform hover:scale-105 duration-300"
+            >
+              <div className="rounded-xl flex flex-col justify-center items-center p-4 bg-white border border-gray-200 hover:shadow-xl">
+                <img
+                  style={{}}
+                  src={certification.imageUrl}
+                  alt={certification.name}
+                  className="w-full h-full object-contain mb-4"
+                />
+                <div className="text-center">
+                  <h4 className="text-black text-lg font-poppins font-semibold">
+                    {certification.name}
+                  </h4>
+                  <p className="text-black-500/50 font-normal text-sm">
+                    {certification.institution}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="py-16">
         <h3 className="subhead-text">Work Experience</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-          A versatile professional with experience in customer service at Tim Hortons, freelance full stack web development, contributing to projects at 100 Devs Agency, and providing efficient service in a grocery store setting. Here's the rundown:
+            A versatile professional with experience in customer service at Tim
+            Hortons, freelance full stack web development, contributing to
+            projects at 100 Devs Agency, and providing efficient service in a
+            grocery store setting. Here's the rundown:
           </p>
         </div>
 

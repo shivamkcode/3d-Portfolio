@@ -36,7 +36,7 @@ import {
   mongoose,
   hangman,
   salon,
-  postgreSQL
+  postgreSQL,
 } from "../assets/icons";
 
 export const skills = [
@@ -95,11 +95,11 @@ export const skills = [
     name: "React",
     type: "Frontend",
   },
-  // {
-  //   imageUrl: redux,
-  //   name: "Redux",
-  //   type: "State Management",
-  // },
+  {
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
+  },
   {
     imageUrl: mysql,
     name: "MYSQL",
@@ -139,6 +139,21 @@ export const skills = [
     imageUrl: expo,
     name: "Expo",
     type: "Frontend",
+  },
+];
+
+export const certifications = [
+  {
+    name: "JavaScript (Basic)",
+    institution: "HackerRank",
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1738901984/javascript_basic_certificate_page-0001_npykan.jpg",
+  },
+  {
+    name: "Problem Solving (Basic)",
+    institution: "HackerRank",
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1738901995/problem_solving_basic_certificate_page-0001_awp71h.jpg",
   },
 ];
 
