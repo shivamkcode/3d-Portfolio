@@ -146,14 +146,37 @@ export const certifications = [
   {
     name: "JavaScript (Basic)",
     institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/e95adc323f38',
     imageUrl:
       "https://res.cloudinary.com/ddmxmmot6/image/upload/v1738901984/javascript_basic_certificate_page-0001_npykan.jpg",
   },
   {
     name: "Problem Solving (Basic)",
     institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/8427fccdd12c',
     imageUrl:
       "https://res.cloudinary.com/ddmxmmot6/image/upload/v1738901995/problem_solving_basic_certificate_page-0001_awp71h.jpg",
+  },
+  {
+    name: "SQL (Basic)",
+    institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/d6774120a023',
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1738905276/sql_basic_certificate_page-0001_tpqhmq.jpg",
+  },
+  {
+    name: "CSS (Basic)",
+    institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/5d2bda16c1f0',
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1739037759/css_certificate_page-0001_ch4xcu.jpg",
+  },
+  {
+    name: "Frontend Developer (React)",
+    institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/6c191e85f8e2',
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1739037759/frontend_developer_react_certificate_page-0001_jmabzj.jpg",
   },
 ];
 

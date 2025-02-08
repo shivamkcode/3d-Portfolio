@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { skills, experiences, certifications } from "../constants";
 import CTA from "../components/CTA";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -26,7 +27,7 @@ const About = () => {
       </div>
 
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">My Skills</h3>
+        <h3 className="subhead-text">Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12 justify-center">
           {skills.map((skill) => {
             const [showDescription, setShowDescription] = useState(false);
@@ -62,7 +63,7 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="subhead-text">My Certifications</h3>
+        <h3 className="subhead-text">Certifications</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
             Here are some of the certifications I've earned to enhance my skills
@@ -71,7 +72,8 @@ const About = () => {
         </div>
         <div className="mt-12 flex flex-wrap gap-8 justify-center">
           {certifications.map((certification) => (
-            <div
+            <Link
+              to={certification.link}
               key={certification.name}
               className="block-container w-[80%] md:w-[45%] cursor-pointer transition transform hover:scale-105 duration-300"
             >
@@ -91,7 +93,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
