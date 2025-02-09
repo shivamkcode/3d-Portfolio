@@ -58,7 +58,6 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
   const handleKeyUp = (e) => {
     if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
-      isRotatingNow = null;
       setIsRotating(false);
     }
   };

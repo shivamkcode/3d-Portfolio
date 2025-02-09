@@ -178,6 +178,20 @@ export const certifications = [
     imageUrl:
       "https://res.cloudinary.com/ddmxmmot6/image/upload/v1739037759/frontend_developer_react_certificate_page-0001_jmabzj.jpg",
   },
+  {
+    name: "React (Basic)",
+    institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/3794bc02f5e3',
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1739129813/react_basic_certificate_page-0001_iklds5.jpg",
+  },
+  {
+    name: "JavaScript (Intermediate)",
+    institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/b5b5427e721d',
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1739130282/javascript_intermediate_certificate_page-0001_c1f8z1.jpg",
+  },
 ];
 
 export const experiences = [

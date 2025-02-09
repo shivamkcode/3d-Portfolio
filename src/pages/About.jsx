@@ -10,6 +10,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const [showAllCertifications, setShowAllCertifications] = useState(false);
+
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -70,7 +72,18 @@ const About = () => {
             and knowledge:
           </p>
         </div>
-        <div className="mt-12 flex flex-wrap gap-8 justify-center">
+        <div
+          className={`relative pt-12 flex flex-wrap gap-8 justify-center ${showAllCertifications ? '' : 'h-[150vh] md:h-[125vh] lg:h-[175vh] overflow-hidden'} `}
+        >
+          {!showAllCertifications && (
+            <div
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(128, 128, 128, 0.5) 100%)",
+              }}
+              className="absolute bottom-0 left-0 right-0 h-16 z-50"
+            />
+          )}
           {certifications.map((certification) => (
             <Link
               to={certification.link}
@@ -96,6 +109,26 @@ const About = () => {
             </Link>
           ))}
         </div>
+        {!showAllCertifications && (
+          <div className="mt-8 flex justify-center text-blue-500">
+            <button
+              className="small outlined"
+              onClick={() => setShowAllCertifications(true)}
+            >
+              Show More
+            </button>
+          </div>
+        )}
+        {showAllCertifications && (
+          <div className="mt-8 flex justify-center text-blue-500">
+            <button
+              className="small outlined"
+              onClick={() => setShowAllCertifications(false)}
+            >
+              Show Less
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="py-16">
