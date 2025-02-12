@@ -266,7 +266,7 @@ export const socialLinks = [
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/shivam-kumar-401594251/",
+    link: "www.linkedin.com/in/shivam-kumar246",
   },
 ];
 
