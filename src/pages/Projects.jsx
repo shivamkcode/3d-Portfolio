@@ -5,6 +5,7 @@ import { arrow } from "../assets/icons";
 import CTA from "../components/CTA";
 
 const Projects = () => {
+  console.log(projects)
   return (
     <section className="max-container">
       <h1 className="head-text">
