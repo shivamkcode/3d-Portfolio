@@ -5,5 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/',
-  assetsInclude: ['**/*glb']
+  assetsInclude: ['**/*glb'],
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    historyApiFallback: true,
+  }
 })
