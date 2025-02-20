@@ -323,7 +323,7 @@ export const projects = [
     description:
       "This is a responsive landing page for Ayesha's Salon. The design is fully responsive, ensuring a seamless transition across a multitude of devices. Whether you are browsing on a desktop, tablet, or smartphone.",
     link: "https://github.com/shivamkcode/freelance-projects/tree/main/ayesha",
-    deploy: "https://ayesha-salon.vercel.app/",
+    deploy: "www.linkedin.com/in/shivam-kumar246/",
   },
   {
     iconUrl: quotes,
