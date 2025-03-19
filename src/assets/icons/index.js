@@ -39,6 +39,7 @@ import mongoose from "./mongoose.svg";
 import hangman from "./hangman.svg";
 import salon from "./salon.png";
 import postgreSQL from './postgreSQL.svg'
+import zentry from './zentry.png'
 
 export {
   mongoose,
@@ -82,4 +83,5 @@ export {
   hangman,
   salon,
   postgreSQL,
+  zentry
 };

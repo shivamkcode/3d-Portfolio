@@ -37,6 +37,7 @@ import {
   hangman,
   salon,
   postgreSQL,
+  zentry,
 } from "../assets/icons";
 
 export const skills = [
@@ -343,14 +344,14 @@ export const projects = [
     link: "https://github.com/shivamkcode/todoList/tree/main/todo",
     deploy: "https://todo-list-lovat-psi.vercel.app/",
   },
-  // {
-  //   iconUrl: pricewise,
-  //   theme: "btn-back-red",
-  //   name: "Expense Tracker",
-  //   description:
-  //     "This application is an Expense Tracker, meticulously crafted using the popular JavaScript library, ReactJS. It serves as a practical tool for individuals who wish to have a clear and concise overview of their financial activities.",
-  //   link: "https://github.com/shivamkcode/ExpenseTracker",
-  // },
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-red",
+    name: "Expense Tracker",
+    description:
+      "This application is an Expense Tracker, meticulously crafted using the popular JavaScript library, ReactJS. It serves as a practical tool for individuals who wish to have a clear and concise overview of their financial activities.",
+    link: "https://github.com/shivamkcode/ExpenseTracker",
+  },
   {
     iconUrl: hangman,
     theme: "btn-back-blue",
@@ -368,5 +369,14 @@ export const projects = [
       "A-one_Ayesha Salon is designed to provide a seamless and user-friendly experience for clients looking to explore salon services. The website includes male and female versions, offering gender-specific services and features. ",
     link: "https://github.com/shivamkcode/Salon",
     deploy: "https://salon.heyshivam.tech/",
+  },
+  {
+    iconUrl: zentry,
+    theme: "btn-back-yellow",
+    name: "Zentry",
+    description:
+      "A-one_Ayesha Salon is designed to provide a seamless and user-friendly experience for clients looking to explore salon services. The website includes male and female versions, offering gender-specific services and features.",
+    link: "https://github.com/shivamkcode/zentry",
+    deploy: "https://zentry.heyshivam.tech/",
   },
 ];
