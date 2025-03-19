@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 const App = () => {
   return (
     <Router>
-      <main className="bg-slate-300/20 min-h-screen">
+      <main className="bg-slate-300/20 h-[100dvh]">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
