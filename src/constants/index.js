@@ -1,4 +1,4 @@
-import { devs, freelance, sk, timHortons } from "../assets/images";
+import { devs, freelance,leverage , sk, timHortons, onroute } from "../assets/images";
 import {
   ayesha,
   book,
@@ -198,9 +198,9 @@ export const certifications = [
 export const experiences = [
   {
     title: "Crew Member",
-    company_name: "Tim Hortons",
-    icon: timHortons,
-    iconBg: "#f2c7c7",
+    company_name: "OnRoute",
+    icon: onroute,
+    iconBg: "#fff",
     date: "March 2024 - Present",
     points: [
       "Delivered top-notch customer service, resolving issues quickly.",
@@ -214,24 +214,11 @@ export const experiences = [
     ],
   },
   {
-    title: "Full-Stack Web Developer",
-    company_name: "Freelance",
-    icon: freelance,
-    iconBg: "#fff",
-    date: "September 2023 - Present",
-    points: [
-      "Developing and maintaining web applications imprementing HTML5, CSS, JS, React.js and other related technologies.",
-      "Created full stack web applications and static websites for different clients across small and medium size businesses. Also, consulted on SEO and social media strategy. ",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Web Developer",
     company_name: "100devs",
     icon: devs,
     iconBg: "#7abfb7",
-    date: "October 2022 - July 2022",
+    date: "September 2023 - Jan 2024",
     points: [
       "Collaborated with a team of developers to build modern and responsive web applications using best practices.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -240,13 +227,25 @@ export const experiences = [
     ],
   },
   {
-    title: "Retail Store Manager",
+    title: "FullStack Web Developer",
+    company_name: "Leverage Edu",
+    icon: leverage,
+    iconBg: "#fff",
+    date: "November 2022 - July 2023",
+    points: [
+      "Led the full-stack development of a multi-tenant SaaS CRM platform using Next.js, Node.js, Postgres, Redis, REST APIs, Casbin for RBAC, and Sentry for error monitoring, enhancing data management efficiency and stakeholders’ productivity.",
+      "Built a WebSocket service with Socket.IO in microservice architecture and executed its integration with PubNub and Next.js on frontend side. yielding a scalable chat module that elevated student engagement and team collaboration.",
+      "Engineered high-performance accommodation platform using Next.js with advanced rendering strategies (SSG/ISR/SSR), optimizing UX and SEO. Implemented Elasticsearch to enhance search performance and integrated analytics solutions (Google Analytics + Netcore Cloud), driving a 15% reduction in bounce rate and improved lead conversion.",
+    ],
+  },
+  {
+    title: "Store Manager",
     company_name: "S.K. Departmental",
     icon: sk,
     iconBg: "#b7e4c7",
-    date: "May 2018 - June 2022",
+    date: "May 2017 - June 2022",
     points: [
-      "Led a successful strategy and communications campaign that exceeded the sales goal by 300%, raising a total of $110,000, with $35,000 raised digitally.",
+      "Led a successful strategy and communications campaign that exceeded the sales goal by 300%.",
       "Oversaw day-to-day operations, managed a dedicated team, and implemented marketing initiatives, resulting in improved store performance and enhanced customer satisfaction",
       "Gained valuable insights into consumer behavior, market trends, and the importance of delivering a personalized retail experience.",
     ],
@@ -375,7 +374,7 @@ export const projects = [
     theme: "btn-back-yellow",
     name: "Zentry",
     description:
-      "A-one_Ayesha Salon is designed to provide a seamless and user-friendly experience for clients looking to explore salon services. The website includes male and female versions, offering gender-specific services and features.",
+      "This project is built with a modern tech stack and designed to replicate the smooth animations, responsive design, and engaging user interface of Zentry. Whether you're exploring its interactive visuals or dynamic scrolling features, this project offers an immersive experience.",
     link: "https://github.com/shivamkcode/zentry",
     deploy: "https://zentry.heyshivam.tech/",
   },

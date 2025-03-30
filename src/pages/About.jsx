@@ -114,7 +114,13 @@ const About = () => {
             and knowledge:
           </p>
         </div>
-        <div id="scroll-container" className="relative w-full overflow-hidden">
+        <div
+          id="scroll-container"
+          style={{
+            mask: "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)",
+          }}
+          className="relative w-full overflow-hidden"
+        >
           <div
             id="horizontal-scroll"
             className="relative pt-12 flex gap-8 justify-start top-1/2 -translate-y-1/2"
@@ -124,7 +130,7 @@ const About = () => {
               <Link
                 to={certification.link}
                 key={certification.name}
-                className="w-[600px] cursor-pointer transition transform hover:scale-105 duration-300"
+                className="w-[600px] cursor-pointer transition transform hover:scale-[101%] duration-300"
               >
                 <div className="rounded-xl flex flex-col justify-center items-center p-4 bg-white border border-gray-200 hover:shadow-xl h-[80vh]">
                   <img
