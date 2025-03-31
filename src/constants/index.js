@@ -159,6 +159,13 @@ export const certifications = [
       "https://res.cloudinary.com/ddmxmmot6/image/upload/v1738901995/problem_solving_basic_certificate_page-0001_awp71h.jpg",
   },
   {
+    name: "Problem Solving (Intermediate)",
+    institution: "HackerRank",
+    link: 'https://www.hackerrank.com/certificates/121998dd6d20',
+    imageUrl:
+      "https://res.cloudinary.com/ddmxmmot6/image/upload/v1743455518/problem_solving_intermediate_certificate_page-0001_ktaddc.webp",
+  },
+  {
     name: "SQL (Basic)",
     institution: "HackerRank",
     link: 'https://www.hackerrank.com/certificates/d6774120a023',
