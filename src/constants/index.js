@@ -231,7 +231,7 @@ export const experiences = [
     company_name: "Leverage Edu",
     icon: leverage,
     iconBg: "#fff",
-    date: "November 2022 - July 2023",
+    date: "January 2022 - July 2023",
     points: [
       "Led the full-stack development of a multi-tenant SaaS CRM platform using Next.js, Node.js, Postgres, Redis, REST APIs, Casbin for RBAC, and Sentry for error monitoring, enhancing data management efficiency and stakeholders’ productivity.",
       "Built a WebSocket service with Socket.IO in microservice architecture and executed its integration with PubNub and Next.js on frontend side. yielding a scalable chat module that elevated student engagement and team collaboration.",
@@ -243,7 +243,7 @@ export const experiences = [
     company_name: "S.K. Departmental",
     icon: sk,
     iconBg: "#b7e4c7",
-    date: "May 2017 - June 2022",
+    date: "May 2017 - December 2021",
     points: [
       "Led a successful strategy and communications campaign that exceeded the sales goal by 300%.",
       "Oversaw day-to-day operations, managed a dedicated team, and implemented marketing initiatives, resulting in improved store performance and enhanced customer satisfaction",
